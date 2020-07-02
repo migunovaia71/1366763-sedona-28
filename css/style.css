@@ -179,7 +179,6 @@ a {
         background-color: var(--basic-blue);
         color: var(--basic-white);
         padding: 27px 10px 10px;
-        height: 256px;
     }
 
     .grid-img1 {
@@ -328,7 +327,6 @@ a {
         background-color: transparent;
         outline: none;
         border: 2px solid var(--basic-greylight);
-        padding-left: 11px;
     }
 
 .search div {
@@ -349,6 +347,11 @@ a {
     padding-left: 13px;
     width: 346px;
 }
+
+    .search-date:focus,
+    .search-date:active {
+        padding-left: 11px;
+    }
 
 .calendar {
     position: absolute;
@@ -435,12 +438,12 @@ a {
     left: 115px;
 }
 
-    .minus-adult:hover svg rect,
-    .minus-adult:focus svg rect {
+    .minus-adult:hover rect,
+    .minus-adult:focus rect {
         fill: var(--basic-black);
     }
 
-    .minus-adult:active svg rect {
+    .minus-adult:active rect {
         fill: var(--basic-blue);
     }
 
@@ -449,12 +452,12 @@ a {
     top: 5px;
 }
 
-    .plus-adult:hover svg path,
-    .plus-adult:focus svg path {
+    .plus-adult:hover path,
+    .plus-adult:focus path {
         fill: var(--basic-black);
     }
 
-    .plus-adult:active svg path {
+    .plus-adult:active path {
         fill: var(--basic-blue);
     }
 
@@ -463,12 +466,12 @@ a {
     top: 2px;
 }
 
-    .minus-child:hover svg rect,
-    .minus-child:focus svg rect {
+    .minus-child:hover rect,
+    .minus-child:focus rect {
         fill: var(--basic-black);
     }
 
-    .minus-child:active svg rect {
+    .minus-child:active rect {
         fill: var(--basic-blue);
     }
 
@@ -477,12 +480,12 @@ a {
     top: 5px;
 }
 
-    .plus-child:hover svg path,
-    .plus-child:focus svg path {
+    .plus-child:hover path,
+    .plus-child:focus path {
         fill: var(--basic-black);
     }
 
-    .plus-child:active svg path {
+    .plus-child:active path {
         fill: var(--basic-blue);
     }
 
@@ -942,16 +945,13 @@ a {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 19px 15px 19px 4px;
+    padding: 27px 57px 29px 45px;
 }
 
 .footer-contacts {
     font-weight: bold;
     font-size: 21px;
     line-height: 36px;
-    height: 60px;
-    margin-bottom: 30px;
-    margin-right: -110px;
     max-width: 350px;
 }
 
@@ -965,7 +965,6 @@ a {
     display: flex;
     list-style: none;
     margin: 0px;
-    margin-right: -62px;
     max-width: 350px;
 }
 
